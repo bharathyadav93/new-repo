@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('build') {
+      steps {
+        bat 'mvn build'
+      }
+    }
+
   }
 }
